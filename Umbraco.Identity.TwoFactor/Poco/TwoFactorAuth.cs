@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Umbraco.Core.Persistence;
+﻿using Umbraco.Core.Persistence;
 using Umbraco.Core.Persistence.DatabaseAnnotations;
 
-namespace Umbraco_Identity_Playground.Auth
+namespace Umbraco.Identity.TwoFactor.Poco
 {
+    
     [TableName("umbracoUserTwoFactor")]
     [PrimaryKey("Id", autoIncrement = true)]
     [ExplicitColumns]
-    public class TwoFactorAuthPoco
+    public class TwoFactorAuth
     {
         [Column("id")]
         [PrimaryKeyColumn(AutoIncrement = true)]
@@ -22,5 +19,5 @@ namespace Umbraco_Identity_Playground.Auth
         [Column("twoFactorEnabled")]
         public bool TwoFactorEnabled { get; set; }
     }
-
+    
 }

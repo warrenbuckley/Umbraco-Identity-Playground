@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Umbraco.Core;
+﻿using Umbraco.Core;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Persistence;
 using Umbraco.Core.Persistence.SqlSyntax;
+using Umbraco.Identity.TwoFactor.Poco;
 
-namespace Umbraco_Identity_Playground.Auth
+namespace Umbraco.Identity.TwoFactor.Events
 {
-    public class AddDbTable : ApplicationEventHandler
+    public class AddTableEvent : ApplicationEventHandler
     {
         //This happens everytime the Umbraco Application starts
         protected override void ApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
@@ -26,7 +23,7 @@ namespace Umbraco_Identity_Playground.Auth
             //Check if DB table does NOT exist - if not create it
             if (creator.TableExist("umbracoUserTwoFactor"))
             {
-                creator.CreateTable<TwoFactorAuthPoco>();
+                creator.CreateTable<TwoFactorAuth>();
             }
 
 
@@ -37,7 +34,5 @@ namespace Umbraco_Identity_Playground.Auth
             //    db.CreateTable<TwoFactorAuthPoco>(false);
             //}
         }
-
-          
     }
 }
