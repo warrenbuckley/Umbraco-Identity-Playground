@@ -1,0 +1,15 @@
+﻿2015-06-19 14:12:09,763 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [ScheduledTasks] Terminating
+2015-06-19 14:12:09,764 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [ScheduledTasks] Waiting for tasks to complete
+2015-06-19 14:12:09,848 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [ScheduledTasks] Tasks completed, terminated
+2015-06-19 14:12:09,850 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [ScheduledPublishing] Terminating
+2015-06-19 14:12:09,850 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [ScheduledPublishing] Waiting for tasks to complete
+2015-06-19 14:12:09,850 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [ScheduledPublishing] Tasks completed, terminated
+2015-06-19 14:12:10,359 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [XmlCacheFilePersister] Terminating
+2015-06-19 14:12:10,360 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [XmlCacheFilePersister] Waiting for tasks to complete
+2015-06-19 14:12:10,361 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [LogScrubber] Terminating
+2015-06-19 14:12:10,361 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [LogScrubber] Waiting for tasks to complete
+2015-06-19 14:12:10,361 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 58] [LogScrubber] Tasks completed, terminated
+2015-06-19 14:12:10,475 [6] INFO  umbraco.content - [Thread 11] Save Xml to file...
+2015-06-19 14:12:10,582 [6] INFO  umbraco.content - [Thread 69] Saved Xml to file.
+2015-06-19 14:12:10,593 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Thread 74] [XmlCacheFilePersister] Tasks completed, terminated
+2015-06-19 14:12:10,829 [6] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 58] Application shutdown. Reason: ConfigurationChange
