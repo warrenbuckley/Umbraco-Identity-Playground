@@ -51,36 +51,6 @@ namespace Umbraco.Identity.TwoFactor.Identity
             return Task.FromResult(0);
         }
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task CreateAsync(BackOfficeIdentityUser user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(BackOfficeIdentityUser user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteAsync(BackOfficeIdentityUser user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<BackOfficeIdentityUser> FindByIdAsync(int userId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<BackOfficeIdentityUser> FindByNameAsync(string userName)
-        {
-            throw new NotImplementedException();
-        }
-
         
     }
 }
