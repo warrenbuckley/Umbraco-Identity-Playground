@@ -48,8 +48,6 @@ namespace Umbraco.Identity.TwoFactor.Controllers
         [HttpGet]
         public async Task<HttpResponseMessage> IsTwoFactorEnabled()
         {
-            //TODO: UserStore needs updating to check our custom DB table to see if it is enabled
-
             var isEnabled = await UserManager.GetTwoFactorEnabledAsync(User.Identity.GetUserId<int>());
             return Request.CreateResponse(HttpStatusCode.OK, isEnabled);
         }
@@ -60,8 +58,6 @@ namespace Umbraco.Identity.TwoFactor.Controllers
         /// <returns></returns>
         public async Task<HttpResponseMessage> ToggleTwoFactorAuth()
         {
-            //TODO: UserStore needs updating to check our custom DB table to see if it is enabled & set new value
-
             //Get the users current state of two factor being enabled
             var isCurrentlyEnabled = await UserManager.GetTwoFactorEnabledAsync(User.Identity.GetUserId<int>());
 
